@@ -51,6 +51,10 @@ Array.from(button).forEach((button)=>{
             string = string + event.key;
             document.querySelector('input').value = string;
         }
+        else if (event.key == "c"){
+            string="";
+            document.querySelector('input').value = string;
+        }
         else if(event.key=="Backspace"){
             let l=string.length;
             string=string.slice(0,l-1)
