@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style .css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <h3>Welcome to Our Calculator!!</h3>
 
     <div class="container">
         <div class="row">
-            <input class="input" type="text">
+            <input class="input" type="text" placeholder="0000">
         </div>
         <div class="row">
-            <button class="button highlight">AC</button>
-            <button class="button highlight">b</button>
+            <button class="button highlight more">C</button>
+            <button class="button highlight"><i class="fa-solid fa-delete-left" style="margin-top: 4px;"></i></button>
             <button class="button highlight">+/-</button>
-            <button class="button highlight">÷</button>
+            <button class="button highlight">/</button>
         </div>
         <div class="row">
             <button class="button">7</button>
             <button class="button">8</button>
             <button class="button">9</button>
-            <button class="button highlight">X</button>
+            <button class="button highlight">*</button>
         </div>
         <div class="row">
             <button class="button">4</button>
@@ -41,8 +42,10 @@
             <button class="button">%</button>
             <button class="button">0</button>
             <button class="button">.</button>
-            <button class="button highlight">=</button>
+            <button class="button highlight more">=</button>
         </div>
     </div>
+
+    <script src="scrpit.js"></script>
 </body>
 </html>
