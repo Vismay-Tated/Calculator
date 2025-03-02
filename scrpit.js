@@ -37,3 +37,25 @@ Array.from(button).forEach((button)=>{
         }
     })
 })
+    document.addEventListener("keydown",(event)=>{
+        let arr=[1,2,3,4,5,6,7,8,9,0]
+        if (event.key == "Enter"){
+            string = eval(string);
+            document.querySelector('input').value = string;
+        }
+        else if(event.key>=0){
+            string = string + event.key;
+            document.querySelector('input').value = string;
+        }
+        else if(event.key=="-"||event.key=="+"||event.key=="/"||event.key=="*"||event.key=="%"||event.key=="."){
+            string = string + event.key;
+            document.querySelector('input').value = string;
+        }
+        else if(event.key=="Backspace"){
+            let l=string.length;
+            string=string.slice(0,l-1)
+            document.querySelector('input').value = string;
+        }
+    })
+
+
